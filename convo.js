@@ -1,7 +1,9 @@
 var express = require('express');
 var request = require("request");
 
-  app = express();
+app = express();
+
+app.use(express.static(__dirname + "/public"))
 
 app.set("view engine", 'ejs');
 
